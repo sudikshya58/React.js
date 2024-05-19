@@ -40,11 +40,11 @@ export const Header = () => {
   }, []);
 
   return (
-    <div className="fixed top-0 left-0 right-0 p-6 bg-white shadow-xl z-50">
+    <div className="fixed top-0 left-0 right-0 p-6 bg-white  shadow-xl z-50">
       <Toaster />
-      <div className="mx-20 flex justify-between items-center">
+      <div className="md:mx-20 flex  justify-between  items-center">
         <img src={logo} alt="Logo" className="w-10 h-10"/>
-        <div className="flex space-x-4">
+        <div className="flex space-x-4 ">
           {NavBar.map((item, i) => (
             <nav key={i}>
               <div className="font-bold">{item.name}</div>
